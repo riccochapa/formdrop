@@ -3,37 +3,81 @@
   <head>
     <meta charset="UTF-8">
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
         <style>
-      .navbar-fixed-top {
-	margin-left: 20px;
+
+.navbar-fixed-top {
+  margin-left: 20px;
   margin-right: 20px;
 }
 
-#sectionMain {
-  padding: 13%;
-  height: 1000px;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-align: center;
+.col-md-1 {
+  width: 20%;
+  height: 160px;
+  /*border: solid;
+  border-width: .25px;
+  border-color: grey;*/
 }
 
-#sectionOne {
-  padding-top: 13%;
+.col-md-4 {
+  position: fixed;
   height: 1000px;
-  color: #FFFFFF;
-  background-color: #000000;
+}
+
+.col-md-8 {
+  margin-left: 30%;
+}
+
+#leftColumn {
+padding-right: 13%;
+}
+
+
+#rightColumn {
+  height: 3100px;
+  border: 13px;
+  /*border-style: solid;
+  border-color: green;
+  background: red;
+  padding: 10px;*/
+}
+
+#sectionZero {
   text-align: center;
+  /*border-style: solid;
+  border-color: grey;
+  background: red;*/
+  padding-top: 33px;
+  margin-bottom: 33px;
+}
+
+
+#sectionOne {
+  text-align: center;
+  /*border-style: solid;
+  border-color: purple;
+  background: black;*/
+  padding-top: 53px;
+  margin-bottom: 33px;
+}
+
+#sectionOneMiddle {
+  background: #eee;
 }
 
 #sectionTwo {
-  padding-top: 13%;
-  height: 1000px;
-  color: #000000;
-  background-color: #FFFFFF;
   text-align: center;
+  /*border-style: solid;
+  border-color: blue;
+  background: yellow;*/
+  padding-top: 53px;
+  margin-bottom: 33px;
+}
+
+#sectionTwoMiddle {
+  background: #333;
 }
     </style>
 
@@ -59,7 +103,7 @@
         <span class="icon-bar"></span>
       </button>
 
-        <a class="navbar-brand" href="#sectionMain">Form Drop</a>
+        <a class="navbar-brand" href="#sectionZero">Form Drop</a>
 
       </div>
 
@@ -96,30 +140,221 @@
   <!-- /.container-fluid -->
   </nav>
 
+  <div class="container">
 
-  <div id="sectionMain" class="container-fluid text-center">
+    <div class="row">
+
+      <div id="leftColumn" class="col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
 
 
-    <h1>Main Page</h1>
+        <br>
+        <br>
+        <input id="6" class="form-control" placeholder="Text input" type="text" name="lname" draggable="true" ondragstart="drag(event)">
 
+        <br>
+        <br>
+        <input id="6" class="form-control" placeholder="Text input" type="text" name="lname" draggable="true" ondragstart="drag(event)">
+        <br>
+        <br>
+        <input id="6" class="form-control" placeholder="Text input" type="text" name="lname" draggable="true" ondragstart="drag(event)">
+        <br>
+        <br>
+
+        <textarea id="7" class="form-control" rows="3" draggable="true" ondragstart="drag(event)"></textarea>
+        <br>
+        <br>
+
+        <input type="file" id="exampleInputFile" draggable="true" ondragstart="drag(event)">
+
+        <br>
+
+
+        <button input id="button1" type="button" class="btn btn-default" draggable="true" ondragstart="drag(event)">Button</button>
+        <br>
+        <button input id="button1" type="button" class="btn btn-default" draggable="true" ondragstart="drag(event)">Button</button>
+        <br>
+        <button input id="button1" type="button" class="btn btn-default" draggable="true" ondragstart="drag(event)">Button</button>
+
+        <br>
+        <br>
+
+        <input id="checkbox1" type="checkbox" name="lname" draggable="true" ondragstart="drag(event)" width="336" height="69">
+        <br>
+        <input id="checkbox1" type="checkbox" name="lname" draggable="true" ondragstart="drag(event)" width="336" height="69">
+        <br>
+
+        <input id="checkbox1" type="checkbox" name="lname" draggable="true" ondragstart="drag(event)" width="336" height="69">
+        <br>
+
+        <input id="checkbox1" type="checkbox" name="lname" draggable="true" ondragstart="drag(event)" width="336" height="69">
+        <br>
+
+        <br>
+        <br>
+
+
+      </div>
+    </div>
 
   </div>
+  <div id="rightColumn" class="col-md-8" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-  <div id="sectionOne" class="container-fluid text-center">
+    <div id="sectionZero" class="row">
+      <div>
 
-    <h1>Page One</h1>
+        <div id="sectionZeroMiddle" class="container-fluid">
 
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div id="sectionOne" class="row">
+      <div>
+
+        <div id="sectionOneMiddle" class="container-fluid">
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+        </div>
+
+      </div>
+    </div>
+
+    <br>
+
+    <div id="sectionTwo" class="row">
+      <div>
+
+        <div id="sectionTwoMiddle" class="container-fluid">
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <br>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Column -->
   </div>
 
-  <div id="sectionTwo" class="container-fluid text-center">
-
-    <h1>Page Two</h1>
-
+  <!-- Row -->
+  </div>
+  <!-- Container -->
   </div>
 
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
 
-  
+        <script>
+      "use strict";
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text file", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text file");
+  ev.target.appendChild(document.getElementById(data));
+}
+      //# sourceURL=pen.js
+    </script>
+
+
+
+
   </body>
 </html>
